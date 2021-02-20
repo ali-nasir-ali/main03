@@ -4,7 +4,7 @@ from wagtail.core import blocks
 from wagtail.core.templatetags.wagtailcore_tags import richtext
 from wagtail.images.blocks import ImageChooserBlock
 
-
+ 
 class TitleAndTextBlock(blocks.StructBlock):
     """Title and text and nothing else."""
 
@@ -20,7 +20,7 @@ class TitleAndTextBlock(blocks.StructBlock):
 class CardBlock(blocks.StructBlock):
     """Cards with image and text and button(s)."""
 
-    title = blocks.CharBlock(required=True, help_text="Add your title")
+    title = blocks.CharBlock(required=False, help_text="Add your title")
 
     cards = blocks.ListBlock(
         blocks.StructBlock(
