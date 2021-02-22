@@ -2,7 +2,7 @@
 
 {% get_menu "main" as navigation %}
 
-
+ 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
@@ -76,7 +76,8 @@
 
 
         {% block content %}{% endblock %}
-
+ <a href="{{ settings.site_settings.SocialMediaSettings.facebook }}">
+                                <i class="fab fa-facebook-f"></i>
         {% cache 604800 footer %}
             <div class="container">
                 <div class="row">
