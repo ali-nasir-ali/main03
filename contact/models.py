@@ -11,7 +11,7 @@ from wagtail.core.fields import RichTextField
 from wagtail.contrib.forms.models import AbstractFormField, AbstractEmailForm
 
 from wagtailcaptcha.models import WagtailCaptchaEmailForm
-
+ 
 
 class FormField(AbstractFormField):
     page = ParentalKey(
